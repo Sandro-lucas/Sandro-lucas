@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>teste</title>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background-image: url('https://static.todamateria.com.br/upload/57/8f/578fea919fb9d-estado-do-tocantins.jpg' );
+background-size: cover;
+background-repeat: no-repeat;
+            margin: 0px;
+            font-family: Arial, sans-serif;
+        }
+        form{
+            background-color: rgb(138, 138, 138);
+            opacity: 0.7;
+            margin: 0 auto;
+            max-width: 400px;
+            border-radius:5px ;
+            box-shadow:0 0 10px rgba(0,0,0,0.1) ;
+             padding: 20px;
+
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            padding: 10px 15px;
+            
+        }
+            input:hover[type="submit"]{ 
+                background-color: #09920e;
+               ;
+            }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <Center>
+    <h1>Governo do Tocantins</h1>
+    </Center>
+    <form action="">
+        Nome:<input type="text" name="Nome"> 
+        <p></p>
+        CPF:<input type="text" name="cpf">
+        <p></p>
+        Sexo:
+
+        <input type="radio" name="sexo" value="outros" /> outros
+        <input type="radio" name="sexo" value="masculino" /> Masculino
+        <input type="radio" name="sexo" value="feminino" /> Feminino
+        <p></p>
+        Descrição física: <br><textarea rows="2" cols="20"></textarea><br/>
+        <p></p>
+        Cidade:<select name="Cidade"></select>
+            <option value="Palmas">Palmas</option>
+            <option value="Araguaína">Araguaína</option>
+            <option value="Gurupi">Gurupi</option>
+            <option value="Porto Nacional">Porto Nacional</option>
+            <option value="Paraíso do Tocantins">Paraíso do Tocantins</option>
+            <option value="Colinas do Tocantins">Colinas do Tocantins</option>
+            <option value="Miracema do Tocantins">Miracema do Tocantins</option>
+            <option value="Tocantinópolis">Tocantinópolis</option>
+            <option value="Dianópolis">Dianópolis</option>
+            <option value="Guaraí">Guaraí</option>
+
+        </select><br />
+        <br> Trabalho:<input type="text" name="trabalho"><br />
+        <br>Salário mensal: <input type="text" name="salário">
+        <br>
+        <center><input type="submit"></center>
+    </form>
+
+
+</body>
+
+</html>
