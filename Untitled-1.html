@@ -1,0 +1,98 @@
+!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warzone</title>
+    <style>
+        body {
+            background-color: rgb(22, 22, 22);
+            height: 1500px;
+        }
+
+        .div-lateral {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        #a {
+            padding: 0px;
+        }
+
+        /* Estilo para links dentro da div lateral */
+        .conteudo-div-lateral a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            transition: background-color 0.3s;
+
+        }
+
+        /* Estilo para links dentro da div lateral ao passar o mouse */
+        .conteudo-div-lateral a:hover {
+            background-color: #555;
+            
+        }
+
+        /* Estilo para o botão de abrir/fechar */
+        #botao-lateral {
+            font-size: 30px;
+            position: fixed;
+            z-index: 2;
+            left: 20px;
+            top: 20px;
+            background-color: #111;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="botao-lateral" onclick="toggleDivLateral()">☰</button>
+
+    <!-- Div lateral -->
+    <div class="div-lateral" id="minha-div-lateral">
+        <div class="conteudo-div-lateral">
+            <table border="1px">
+                <Br />
+                <tr>
+                    <td><a href="https://www.callofduty.com/br/pt/playnow/warzone">Warzone</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.callofduty.com/br/pt/warzonemobile">Warzone mobile</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://us.shop.battle.net/pt-br/product/call-of-duty-warzone-2">dowload</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function toggleDivLateral() {
+            var divLateral = document.getElementById('minha-div-lateral');
+            if (divLateral.style.width === '250px') {
+                divLateral.style.width = '0';
+            } else {
+                divLateral.style.width = '250px';
+            }
+        }
+    </script>
+    <div id="a"></div>
+    <img src="https://blog.activision.com/content/dam/atvi/activision/atvi-touchui/blog/callofduty/feature/AGB_WZ_0309_TOUT.jpg"
+        width="100%" height="500px">
+</body>
+
+</html>
